@@ -1,0 +1,80 @@
+html {
+  margin: 0px;
+}
+
+body {
+  background-image: url(/Other\ stuff/cw.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: "Christmas and Santona";
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  overflow: hidden;
+}
+
+.bells {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  top: 50px;
+}
+
+h1 {
+  margin-left: 320px;
+  margin-top: 0px;
+  padding: 0;
+  font-size: 100px;
+  color: white;
+  text-decoration: none;
+  font-weight: 10px;
+  text-shadow: 3px 3px 3px red;
+}
+
+@font-face {
+  font-family: "Christmas and Santona";
+  src: url(/Other\ stuff/Christmas_and_Santona.ttf);
+}
+
+.button {
+  color: white;
+  cursor: pointer;
+}
+
+.button:active p {
+  animation: click 0.3 ease-in;
+}
+
+@keyframes click {
+  25% {
+    transform: rotate(-20deg);
+  }
+
+  50% {
+    transform: rotate(20deg);
+  }
+
+  75% {
+    transform: rotate(-10deg);
+  }
+  100% {
+    transform: rotate(10deg);
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.fa-snowflake {
+  color: #fff;
+  position: absolute;
+  top: -20px;
+  animation: fall linear forwards;
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(105vh);
+  }
+}
