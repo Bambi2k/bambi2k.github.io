@@ -2,9 +2,9 @@ function play() {
   var audio = document.getElementById("audio");
   audio.play();
   var bell = document.getElementById("bell");
-  bell.classList.add("css-klass med animation");
+  bell.classList.add("bells-animation");
   setTimeout(() => {
-    bell.classList.remove("css-klass med animation");
+    bell.classList.remove("bells-animation");
   }, 1000);
 }
 

@@ -56,7 +56,7 @@ h1 {
   animation: fall linear forwards;
 }
 
-.bells:active {
+.bells-animation:active {
   animation: shake 0.8s;
 }
 
